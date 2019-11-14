@@ -1,0 +1,3 @@
+https://kenney.nl/content/3-assets/92-platformer-art-deluxe/platformer-art-complete-pack-0.zip
+
+extact to ./ of this directory
