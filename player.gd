@@ -11,6 +11,7 @@ var jump_velocity = -500
 var onFloor = false
 var time = 0
 var moving = false
+var health = 1
 
 # Functions
 func Friction(type):
@@ -73,6 +74,13 @@ func _physics_process(delta):
 		time += delta
 		if time > 0.4 and velocity.y > 0:
 			$Sprite.play('fall')
+	
+	if health == 1:
+		$Camera2D/health.play('1')
+	elif health == 0.5:
+		$Camera2D/health.play('0.5')
+	else:
+		$Camera2D/health.play('0')
 	
 	
 	velocity = move_and_slide(velocity, Vector2(0,-1))
